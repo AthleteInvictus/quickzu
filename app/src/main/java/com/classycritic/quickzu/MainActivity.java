@@ -14,6 +14,7 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
 
+    //The Webview for Snapzu
     private WebView mWebView;
 
     @Override
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
         mWebView.setInitialScale(50);
     }
 
+    //Allows the back button to go back in Webview, not exit app
     @Override
     public void onBackPressed() {
         if (mWebView.canGoBack()) {
@@ -64,5 +66,6 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
 
 }
